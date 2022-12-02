@@ -14,5 +14,6 @@ class books(models.Model):
     id=models.AutoField(primary_key=True,unique=True)
     bookid=models.CharField(max_length=100)
     bookname=models.CharField(max_length=100)
+    bookauthor=models.CharField(max_length=100)
     bookstate=models.BooleanField()
 
