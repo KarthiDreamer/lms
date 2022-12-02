@@ -27,7 +27,7 @@
     <center>
         <div class="container-fluid" id="container">
             <div class="card" style="width: 50rem;">
-                <form class="card-body" method="post" >
+                <form class="card-body" action = ""  method = "get" >
 
                     <h5 class="card-title">Sign Up</h5>
                     <p class="card-text"></p>
@@ -78,7 +78,7 @@
                         <label for="address" class="col-sm-2 col-form-label"> Address</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="address"
-                                placeholder="Enter Your Address"autocomplete="on">
+                                placeholder="Enter Your Address">
                         </div>
                     </div>
 
@@ -86,17 +86,17 @@
                         <label for="emailid" class="col-sm-2 col-form-label"> Email Id</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control" id="emailid"
-                                placeholder="name@example.com" autocomplete="on">
+                                placeholder="name@example.com">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword" autocomplete="on">
+                            <input type="password" class="form-control" id="inputPassword" >
                         </div>
                     </div>
 
-                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                    <a href="booksInfo"> <button type="submit" id="submitButton" class="btn btn-primary" value="OK" >Submit</button> </a>
 
                 </form>
             </div>
@@ -104,19 +104,19 @@
     </center>
 </body>
 <script>
+
     console.log("script is running ...");
 
-
     document.getElementById("submitButton").addEventListener("click", ()=> {
+
         var studentid = document.getElementById('studentid').value;
-  
-  var password = document.getElementById('inputPassword').value;
+        var password = document.getElementById('inputPassword').value;
+
         console.log(studentid);
-            console.log(password);
+        console.log(password);
     }
     
     );
-
 
 </script>
 </html>

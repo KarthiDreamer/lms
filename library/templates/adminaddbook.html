@@ -38,13 +38,7 @@
                                 placeholder="Enter Book Id" autofocus>
                         </div>
                     </div>
-                    <div class="mb-3 row">
-                        <label for="btitle" id="name" class="col-sm-2 col-form-label"> Book Title</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="btitle"
-                                placeholder="Enter Book Title " autocomplete="on">
-                        </div>
-                    </div>
+                   
                     <div class="mb-3 row">
                         <label for="bname" class="col-sm-2 col-form-label"> Book Name</label>
                         <div class="col-sm-10">
@@ -75,27 +69,6 @@
                         </div>
                     </div>
 
-                    <div class="mb-3 row">
-                        <label for="address" class="col-sm-2 col-form-label"> Address</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="address"
-                                placeholder="Enter Your Address"autocomplete="on">
-                        </div>
-                    </div>
-
-                    <div class="mb-3 row">
-                        <label for="emailid" class="col-sm-2 col-form-label"> Email Id</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="emailid"
-                                placeholder="name@example.com" autocomplete="on">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword" autocomplete="on">
-                        </div>
-                    </div>
 
                     <button type="submit" id="submitbutton" class="btn btn-primary">Submit</button>
 
@@ -105,8 +78,16 @@
     </center>
 </body>
 <script>
-    var bookid=document.getElementById("submitbutton");
-    bookid.addEventListener("click",)
+        document.getElementById("submitButton").addEventListener("click", ()=> {
+        
+        var bookid = document.getElementById('bookid').value;
+        var bname = document.getElementById('bname').value;
+        var author = document.getElementById('author').value;
+
+        console.log(bookid);
+        console.log(bname);
+        console.log(author);
+    })
 
 </script>
 </html>

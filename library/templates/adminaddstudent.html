@@ -94,7 +94,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" id="btn" class="btn btn-primary">Submit</button>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
 
                 </form>
             </div>
@@ -102,12 +102,14 @@
     </center>
 </body>
 <script>
-    var btn = document.getElementById('btn').onclick(function(e){
-    var name = document.getElementById('name').value;
-        console.log(name);
+    document.getElementById("submitButton").addEventListener("click", ()=> {
+        
+        var studentid = document.getElementById('studentid').value;
+        var password = document.getElementById('inputPassword').value;
 
-
-    })
+        console.log(studentid);
+        console.log(password);
+    }
 
 </script>
 </html>
