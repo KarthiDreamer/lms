@@ -17,18 +17,32 @@ def signIn(request):
     return render(request , 'signin.html')
 
 def signUp(request):
+    
     return render(request , 'signup.html')
 
 # def bookInfo(request):
 #     return render(request , 'booksinfo.html')
 
-def bookInfo(request):
-    print(request.GET)
-    return render(request, 'booksinfo.html')
+def booksInfo(request):
+    if request.method == "POST":
+        student.studentid
+        return render(request, 'booksinfo.html')
 
-def borrowableBooks(request):
+def borrowablebooks(request):
     return render(request, 'borrowablebooks.html')
 
-def returnableBooks(request):
+def returnablebooks(request):
     return render(request, 'returnablebooks.html')
+
+def adminlogin(request):
+    return render(request, 'adminlogin.html')
+
+def admindashboard(request):
+    return render(request,"admindashboard.html")
+
+def adminaddbook(request):
+    return render(request, 'adminaddbook.html')
+
+def adminaddstudent(request):
+    return render(request, 'adminaddstudent.html')
 

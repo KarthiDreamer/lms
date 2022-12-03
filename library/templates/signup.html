@@ -27,7 +27,11 @@
     <center>
         <div class="container-fluid" id="container">
             <div class="card" style="width: 50rem;">
-                <form class="card-body" action = ""  method = "get" >
+                <form class="card-body" action = ""  method = "post" >
+                    {% csrf_token %}
+                    <!-- <div>
+
+                    </div> -->
 
                     <h5 class="card-title">Sign Up</h5>
                     <p class="card-text"></p>
@@ -44,7 +48,7 @@
                         <label for="fname" id="name" class="col-sm-2 col-form-label"> First Name</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="fname"
-                                placeholder="Enter Your First Name " autocomplete="on">
+                                placeholder="Enter Your First Name " >
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -103,7 +107,7 @@
         </div>
     </center>
 </body>
-<script>
+<!-- <script>
 
     console.log("script is running ...");
 
@@ -118,5 +122,5 @@
     
     );
 
-</script>
+</script> -->
 </html>
